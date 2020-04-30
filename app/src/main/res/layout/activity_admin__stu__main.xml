@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.book_activity.Book_Show_All_Activity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:background="@color/color7"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/Admin_stu_back"
+            android:onClick="click"
+            />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学生用户"
+            android:textSize="25sp"
+            android:paddingRight="35dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp">
+        <EditText
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:id="@+id/Admin_stu_searchContent"
+            android:layout_marginLeft="10sp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/search"
+            android:id="@+id/Admin_stu_Search"
+            android:layout_marginTop="4sp"
+            android:onClick="click"
+            android:layout_marginRight="10sp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Admin_stu__lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color1"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/my2"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/Admin_books"
+            android:onClick="click"
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/stu"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/Admin_student"
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/tea"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/Admin_teacher"
+            android:onClick="click"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

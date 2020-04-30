@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.book_activity.Book_Show_All_Activity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:background="@color/color7"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="355sp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的课程"
+            android:textSize="25sp"
+            android:paddingLeft="45sp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/add"
+            android:paddingTop="7dp"
+            android:onClick="click"
+            android:id="@+id/Teacher_My_Books_AddBook"
+            android:layout_marginRight="10sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp">
+        <EditText
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:id="@+id/Teacher_My_Books_searchContent"
+            android:layout_marginLeft="10sp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/search"
+            android:id="@+id/Teacher_My_Books_Search"
+            android:layout_marginTop="4sp"
+            android:onClick="click"
+            android:layout_marginRight="10sp"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/Teacher_My_Books_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color1"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/home"
+            android:layout_marginLeft="45dp"
+            android:onClick="click"
+            android:id="@+id/Teacher_My_Books_TeacherHome"
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/my2"
+            android:layout_marginLeft="100dp"
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/user_center1"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/Teacher_My_Books_To_UserCenter"
+            android:onClick="click"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

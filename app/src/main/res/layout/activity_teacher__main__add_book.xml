@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".activity.teacher_maiactivity.Teacher_MainActivity_AddBook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:background="@color/color7"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/Teacher_addBook_back"
+            android:onClick="click"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="60sp"
+            android:text="添加课程"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Teacher_addBook_bookFace"
+        android:layout_width="100sp"
+        android:layout_height="140sp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/book_face"
+        android:onClick="click"
+        android:layout_marginTop="50sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp"
+        >
+
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:hint="@string/File_path"
+            android:id="@+id/Teacher_addBook_bookContent"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/Teacher_addBook_bt_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_path"
+            android:textSize="20sp"
+            android:onClick="click"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50sp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/preview_bookContent"
+            android:layout_marginLeft="30sp"
+            android:id="@+id/Teacher_addBook_previewBookContent"
+            android:onClick="click"
+            android:background="@color/color6"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/add_book"
+            android:layout_marginLeft="105sp"
+            android:id="@+id/Teacher_addBook_add_book"
+            android:onClick="click"
+            android:background="@color/color2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

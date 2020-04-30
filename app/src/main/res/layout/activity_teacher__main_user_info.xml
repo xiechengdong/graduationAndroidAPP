@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".activity.teacher_maiactivity.Teacher_MainActivity_userInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/userinfo"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Teacher_userInfo_headImage"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/morentouxiang4"
+        android:onClick="click"
+        android:layout_marginTop="50sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:paddingTop="25dp"
+        >
+        <EditText
+            android:id="@+id/Teacher_userInfo_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="text"
+            android:hint="@string/StuName"
+            />
+        <EditText
+            android:hint="@string/StuNumber"
+            android:id="@+id/Teacher_userInfo_Number"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/Teacher_userInfo_Major"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/Major_Or_Work"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/Teacher_userInfo_Phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="@string/StuPhone"
+            />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:paddingTop="25dp"
+            >
+
+            <Button
+                android:id="@+id/Teacher_userInfo_Modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color2"
+                android:onClick="click"
+                android:text="@string/Modify"
+                android:textColor="@color/color3"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:id="@+id/Teacher_userInfo_chang_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_Phone"
+            android:textSize="16sp"
+            android:onClick="click"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:id="@+id/Teacher_userInfo_ModifyPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ModifyPassword"
+            android:textSize="16sp"
+            android:onClick="click"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:id="@+id/Teacher_userInfo_back_userCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_user_center"
+            android:textSize="16sp"
+            android:onClick="click"
+            android:layout_marginRight="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+</LinearLayout>

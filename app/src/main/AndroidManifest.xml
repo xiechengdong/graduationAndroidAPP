@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xcd.graduation">
+    <!-- 解决网络传输未加密的问题 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取相册资源权限 -->
+    <!-- 获取读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/fengmian1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/fengmian1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.book_activity.Book_Show_Hot_All_Activity"></activity>
+        <activity android:name=".activity.message_activity.Message_Detail_Activity" />
+        <activity android:name=".activity.admin_activity.Admin_Addguanggao_MainActivity" />
+        <activity android:name=".activity.admin_activity.Admin_guangao_MainActivity" />
+        <activity android:name=".activity.admin_activity.Admin_Home_MainActivity" />
+        <activity android:name=".activity.admin_activity.Admin_Teacher_MainActivity" />
+        <activity android:name=".activity.admin_activity.Admin_Stu_MainActivity" />
+        <activity android:name=".activity.admin_activity.Admin_book_MainActivity" />
+        <activity android:name=".activity.user_activity.Admin_Login_MainActivity" />
+        <activity android:name=".activity.book_activity.Student_Book_Show_Details_Activity" />
+        <activity android:name=".activity.book_activity.Book_Show_details_Activity" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_details" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_AddBook" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_MyBooks" />
+        <activity android:name=".activity.book_activity.Book_Show_All_Activity" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_Home" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_ModifyPassword" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_changePhone" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_userInfo" />
+        <activity android:name=".activity.user_activity.Welcom_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.user_activity.Modify_Password_Activity" />
+        <activity android:name=".activity.user_activity.forget_password_MainActivity" />
+        <activity android:name=".activity.teacher_maiactivity.Teacher_MainActivity_userCenter" />
+        <activity android:name=".activity.user_activity.Login_Activity" />
+        <activity android:name=".activity.user_activity.Student_Register" />
+        <activity android:name=".activity.student_mainactivity.Stu_MainActivity_MyBooks" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xcd.graduation.adapter.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+    </application>
+
+</manifest>

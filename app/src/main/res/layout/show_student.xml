@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/color1"
+    >
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="60sp"
+        android:src="@mipmap/book_face"
+        android:id="@+id/stu_face"
+        android:layout_marginLeft="5sp"
+        />
+    <TextView
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:text="学号"
+        android:paddingTop="22sp"
+        android:layout_marginLeft="30sp"
+        android:id="@+id/stu_number"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:paddingTop="22sp"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/stu_name"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/stu_id"
+        />
+</LinearLayout>

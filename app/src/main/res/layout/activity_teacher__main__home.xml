@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.teacher_maiactivity.Teacher_MainActivity_Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5sp"
+        android:background="@color/color7"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="首页"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <!--轮播图-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        >
+        <AdapterViewFlipper
+            android:id="@+id/Teacher_Home_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:flipInterval="2000"
+            android:layout_alignParentTop="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185sp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:text="@string/all_books"
+                android:layout_marginLeft="0sp"
+                android:background="@color/color2"
+                android:textSize="20sp"
+                android:paddingTop="10sp"
+                android:id="@+id/Teacher_Look_All_Book"
+                android:onClick="click"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:text="热门课程推荐"
+                android:layout_marginLeft="0sp"
+                android:background="@color/color2"
+                android:textSize="20sp"
+                android:paddingTop="10sp"
+                android:id="@+id/Teacher_Look_hot_Book"
+                android:onClick="click"
+                android:layout_marginTop="5sp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350sp"
+        >
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@mipmap/kefu"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13752910250"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="130dp"
+            android:onClick="click"
+            android:id="@+id/Home_tel"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400sp"
+        >
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@mipmap/gonggao"
+            android:layout_marginLeft="33dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/gonggao_Time"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/gonggao"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color1"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/home"
+            android:layout_marginLeft="45dp"
+            android:onClick="click"
+
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/my2"
+            android:layout_marginLeft="100dp"
+            android:onClick="click"
+            android:id="@+id/Teacher_Home_To_MyBooks"
+            />
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@mipmap/user_center1"
+            android:layout_marginLeft="90dp"
+            android:onClick="click"
+            android:id="@+id/Teacher_Home_To_UserCenter"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

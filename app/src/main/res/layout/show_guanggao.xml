@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/color1"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:src="@mipmap/guangao"
+        android:id="@+id/Admin_guanggao_face"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/Admin_guanggao_name"
+            android:layout_width="180sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:text="广告商名称" />
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:id="@+id/Admin_guanggao_start"
+            />
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:id="@+id/Admin_guanggao_end"
+            android:layout_marginRight="5sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/id"
+            android:id="@+id/Admin_guanggao_id"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

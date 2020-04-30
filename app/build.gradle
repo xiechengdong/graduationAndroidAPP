@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.xcd.graduation"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'index-all.html'
+        exclude 'index.html'
+        exclude 'stylesheet.css'
+        exclude 'allclasses-frame.html'
+        exclude 'package-list'
+        exclude 'help-doc.html'
+        exclude 'constant-values.html'
+        exclude 'overview-tree.html'
+        exclude 'serialized-form.html'
+        exclude 'deprecated-list.html'
+        exclude 'allclasses-noframe.html'
+        exclude 'overview-summary.html'
+        exclude 'script.js'
+        exclude 'overview-frame.html'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation files('libs/jackson-annotations-2.9.10-javadoc.jar')
+    implementation files('libs/jackson-core-2.9.8-javadoc.jar')
+    implementation files('libs/jackson-databind-2.9.9.1.jar')
+    implementation files('libs/jackson-core-2.9.8.jar')
+    implementation files('libs/jackson-annotations-2.9.10.jar')
+    implementation files('libs/json-lib-2.4-jdk15.jar')
+    implementation files('libs/json-lib-2.4-jdk15-javadoc.jar')
+    implementation files('libs/fastjson-1.2.62.jar')
+    implementation files('libs/fastjson-1.2.62-javadoc.jar')
+    implementation files('libs/gson-2.8.5.jar')
+}

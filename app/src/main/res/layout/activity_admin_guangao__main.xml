@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.admin_activity.Admin_guangao_MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:background="@color/color7"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/Admin_guanggao_back"
+            android:onClick="click"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="广告管理"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/add"
+            android:paddingTop="7dp"
+            android:onClick="click"
+            android:id="@+id/Admin_guangao_AddGuanggao"
+            android:layout_marginRight="10sp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Admin_guanggao_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+</LinearLayout>
